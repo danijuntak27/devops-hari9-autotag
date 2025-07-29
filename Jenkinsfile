@@ -31,7 +31,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh "sleep 3 && curl localhost:5001"
+        sh "sleep 3 && curl localhost:6001"
       }
     }
   }
