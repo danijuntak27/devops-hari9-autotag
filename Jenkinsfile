@@ -25,7 +25,7 @@ pipeline {
     stage('Run Container') {
       steps {
         sh "docker rm -f devops-auto-${SAFE_BRANCH} || true"
-        sh "docker run -d --name devops-auto-${SAFE_BRANCH} -p 5001:5000 ${IMAGE_NAME}"
+        sh "docker run -d --name devops-auto-${SAFE_BRANCH} -p 6001:6000 ${IMAGE_NAME}"
       }
     }
 
